@@ -1,9 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
-import CardsPage from "./cards/pages/CardsPage";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./routes/Router";
 
 function App() {
-  return <CardsPage />;
+  return (
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
 }
 
 export default App;
